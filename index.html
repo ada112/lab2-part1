@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 1: Curriculum</title>
+    <link rel='stylesheet' href='styles.css' />
+    <title>Laboratorio 2: Curriculum con css</title>
 </head>
 
 <body>
     <header>
         <img src="imagen-mia.jpeg" width="200px">
-        <h1>Paola Masiel Rijo Martinez</h1>
+        <h1 id="name">Paola Masiel Rijo Martinez</h1>
+        <div class="break"></div>
         <address>
             <div><a href="masiel.107@gmail.com">masiel.107@gmail.com </a></div>
             <div><a href="tel:+18296394329">+1 (829) 639 4329</a></div>
@@ -20,7 +22,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="clear-fix">
         <section>
             <h3>Education</h3>
             <p>Tecnológico de Monterrey (ITESM)– Monterrey, México.<br>
@@ -29,6 +31,7 @@
                 Current GPA: 92/100
             </p>
         </section>
+        <div class="dash"></div>
 
         <section>
             <h3>Work Experience</h3>
@@ -52,6 +55,7 @@
         </section>
         <!--End Work experience section-->
 
+        <div class="dash"></div>
         <section>
             <h3>Projects</h3>
             <h4> SmokeyClicker <span>August 2018</span></h4>
@@ -72,38 +76,42 @@
                     movements of the objects in the game.
                 </li>
             </ul>
-
+            <div class="dash"></div>
         </section>
         <!--End Project section-->
 
-        <section>
-            <h3>Technical skills</h3>
+        <section class="technical">
+            <div class="prueba">
+                <h3>Technical skills</h3>
 
-            <div>
-                <h4>Programming Languages</h4>
-                <ul>
-                    <li>
-                        C++ <span>3 years</span>
-                    </li>
-                    <li>
-                        C# <span>4 months</span>
-                    </li>
-                </ul>
-            </div><!--End programming languages-->
+                <div>
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>
+                            C++ <span>3 years</span>
+                        </li>
+                        <li>
+                            C# <span>4 months</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--End programming languages-->
 
-            <div>
-                <h4>Other Technologies</h4>
-                <ul>
-                    <li>
-                        Sql <span>1 year</span>
-                    </li>
-                    <li>
-                        HTML&CSS <span>1 month</span>
-                    </li>
-                </ul>
-            </div><!--End Other technologies-->
+                <div>
+                    <h4>Other Technologies</h4>
+                    <ul>
+                        <li>
+                            Sql <span>1 year</span>
+                        </li>
+                        <li>
+                            HTML&CSS <span>1 month</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--End Other technologies-->
+            </div>
 
-            <div>
+            <div class= "idk">
                 <h4>Lanagages</h4>
                 <ul>
                     <li>
@@ -119,16 +127,20 @@
                         french <span>Basic</span>
                     </li>
                 </ul>
-            </div><!--End Languages-->
+            </div>
+            <!--End Languages-->
 
         </section>
         <!--End Technical skills section-->
 
+
     </main>
+
     <footer>
-        <h4>
+        <div class="dash"></div>
+        <h3>
             Interests
-        </h4>
+        </h3>
         <p>I enjoy watching tutorials on youtube and listening to music</p>
     </footer>
 </body>
